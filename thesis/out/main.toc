@@ -1,0 +1,32 @@
+\babel@toc {english}{}\relax 
+\babel@toc {ngerman}{}\relax 
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{List of Figures}{iii}{chapter*.3}%
+\contentsline {chapter}{List of Tables}{iv}{section*.5}%
+\contentsline {chapter}{Listings}{v}{chapter*.7}%
+\contentsline {chapter}{List of AI Models and Tools}{vi}{chapter*.8}%
+\contentsline {chapter}{Abbreviations}{vii}{table.0.1}%
+\contentsline {chapter}{\numberline {1}Basics}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Abschnitt}{1}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Unterabschnitt}{1}{subsection.1.1.1}%
+\contentsline {subsubsection}{\nonumberline Unterunterabschnitt}{1}{subsubsection*.12}%
+\contentsline {section}{\numberline {1.2}Quellenangaben}{1}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Im Text}{1}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Referenzierung von Titel oder Autor}{2}{subsection.1.2.2}%
+\contentsline {section}{\numberline {1.3}Aufzählungen}{2}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Fußnoten}{2}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Bilder}{3}{section.1.5}%
+\contentsline {chapter}{\nonumberline Bibliography}{4}{chapter*.14}%
+\contentsline {chapter}{Declaration of Authorship}{5}{chapter*.15}%
+\babel@toc {ngerman}{}\relax 
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{Blocking Notice}{6}{chapter*.17}%
+\babel@toc {ngerman}{}\relax 
+\babel@toc {english}{}\relax 
+\contentsline {part}{Appendix}{}{}
+\contentsline {chapter}{\numberline {A}Supplementary Figures and Tables}{A--1}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Source Code}{B--1}{appendix.B}%
+\contentsline {section}{\numberline {B.1}GitHub Repository}{B--1}{section.B.1}%
+\contentsline {chapter}{\numberline {C}Data}{C--1}{appendix.C}%
+\contentsline {chapter}{\numberline {D}Questionnaires}{D--1}{appendix.D}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

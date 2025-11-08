@@ -1,0 +1,16 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="main bibliography" type="BIBTEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
+    <texify-bibtex>
+      <compiler>BIBER</compiler>
+      <compiler-path />
+      <compiler-arguments />
+      <envs />
+      <main-file>$PROJECT_DIR$/thesis/src/main.tex</main-file>
+      <aux-dir>$PROJECT_DIR$/thesis/out</aux-dir>
+      <latex-distribution>TEXLIVE</latex-distribution>
+    </texify-bibtex>
+    <method v="2">
+      <option name="RunConfigurationTask" enabled="true" run_configuration_name="pdfLaTeX" run_configuration_type="LATEX_RUN_CONFIGURATION" />
+    </method>
+  </configuration>
+</component>

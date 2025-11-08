@@ -1,0 +1,74 @@
+\begin{titlepage}
+    \thispagestyle{empty}
+    \begin{center}
+        % --- University logo at top ---
+        \includegraphics[width=7cm]{../img/htw_logo_green}
+
+        % --- Horizontal line ---
+        \vspace{0.5cm}
+        \hrule height 1pt
+        \vspace{0.5cm}
+
+        % --- Title section (with tabular for perfect line spacing) ---
+        \begin{tabular}{c}
+        {\LARGE\bfseries One} \\[4pt]
+        {\LARGE\bfseries Two} \\[4pt]
+        {\LARGE\bfseries Three}
+        \end{tabular}
+
+        % --- Horizontal line below title ---
+        \vspace{0.5cm}
+        \hrule height 1pt
+        \vspace{0.2cm}
+        {\large Master’s Thesis}
+
+        % --- Study program ----
+        \vspace{0.7cm}
+        {\textit{Study Programme}\\[-6pt]}
+        {\Large Business Computing\\[14pt]}
+        {\Large \textbf{Faculty 4}}
+
+        % --- Student Info ----
+        \vspace{0.7cm}
+        {\textit{Submitted by}\\}
+        {\Large Student Name}
+
+        % --- Bottom section with date and reviewers ---
+        \vspace{0.7cm}
+        {\textit{Date}\\}
+        {\Large Berlin, \today}
+
+        \vspace{0.5cm}
+        {\large\linespread{1}%
+        1st Supervisor: Prof. Dr. First\\
+        2nd Supervisor: Prof. Dr. Second\\[14pt]}
+    \end{center}
+\end{titlepage}
+
+\newpage
+\thispagestyle{empty} % Important: removes the page number
+
+\begin{center}
+    \vspace*{\fill} % Start filling space from the top
+
+    Dedication Text
+
+    \vspace*{\fill} % Fill remaining space to the bottom
+\end{center}
+
+\newpage
+
+\KOMAoptions{titlepage=false}
+\begin{abstract}
+    \noindent This abstract will be written once the thesis is finished.
+    \keywords{Conversational, Analytics, BI, LLMs, HIL, RLHF}
+\end{abstract}
+
+
+\selectlanguage{ngerman}
+\begin{abstract}
+    \noindent Deutsche Zusammenfassung.
+    \keywords{Conversational, Analytics, BI, LLMs, HIL, RLHF}
+\end{abstract}
+
+\selectlanguage{english}

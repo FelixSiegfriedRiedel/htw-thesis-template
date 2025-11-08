@@ -1,0 +1,29 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="pdfLaTeX (all)" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
+    <texify>
+      <compiler>PDFLATEX</compiler>
+      <compiler-path />
+      <pdf-viewer>system-default</pdf-viewer>
+      <require-focus>true</require-focus>
+      <viewer-command />
+      <compiler-arguments />
+      <envs />
+      <expand-macros-in-environment-variables>false</expand-macros-in-environment-variables>
+      <before-run-command />
+      <main-file>$PROJECT_DIR$/thesis/src/main.tex</main-file>
+      <output-path>$PROJECT_DIR$/thesis/out</output-path>
+      <auxil-path>{projectDir}/auxil</auxil-path>
+      <compile-twice>false</compile-twice>
+      <output-format>PDF</output-format>
+      <latex-distribution>TEXLIVE</latex-distribution>
+      <has-been-run>true</has-been-run>
+      <bib-run-config>[]</bib-run-config>
+      <makeindex-run-config>[]</makeindex-run-config>
+    </texify>
+    <method v="2">
+      <option name="RunConfigurationTask" enabled="true" run_configuration_name="main bibliography" run_configuration_type="BIBTEX_RUN_CONFIGURATION" />
+      <option name="ToolBeforeRunTask" enabled="true" actionId="Tool_External Tools_makeglossaries" />
+      <option name="RunConfigurationTask" enabled="true" run_configuration_name="pdfLaTeX" run_configuration_type="LATEX_RUN_CONFIGURATION" />
+    </method>
+  </configuration>
+</component>

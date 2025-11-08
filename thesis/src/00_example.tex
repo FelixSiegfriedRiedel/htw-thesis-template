@@ -1,0 +1,51 @@
+\chapter{Basics}
+Zeilenumbrüche mit \textbackslash \textbackslash \\
+\textbf{fetter Text} mit \textbackslash textbf (Str+B) \\
+\textit{kursiver Text} mit \textbackslash textit (Str+I) 
+\par Neuer Absatz mit \textbackslash par
+\par \textbackslash chapter\{\}, \textbackslash section\{\}, \textbackslash subsection\{\}, \textbackslash subsubsection\{\} erstellt Abschnitte, Kapitel 
+
+
+\section{Abschnitt}
+\subsection{Unterabschnitt}
+\subsubsection{Unterunterabschnitt}
+
+
+\section{Quellenangaben}
+\subsection{Im Text}
+\textbackslash cite[Vgl.][]\{Name der Quelle im Verzeichnis\}
+% glossary entries with gls
+\par \gls{LLM}s have been heavily researched for the past 10 years (\cite[Cf.][]{sunSurveyLargeLanguagea})
+
+\subsection{Referenzierung von Titel oder Autor}
+\textbackslash citeauthor oder \textbackslash citetitle
+\par Though there is a study published by \citeauthor{sunSurveyLargeLanguagea} which examines how \gls{LLM}s work: \citetitle{sunSurveyLargeLanguagea}.
+
+\section{Aufzählungen}
+enumerate bzw. itemize
+\begin{enumerate}
+    \item Eins
+    \item Zwei
+    \item Drei
+\end{enumerate}
+
+\begin{itemize}
+    \item Stichpunkt
+    \item Stichpunkt
+    \item Stichpunkt
+\end{itemize}
+
+\section{Fußnoten}
+
+Only songs with the biggest appeal to the public will be analysed. The song selection is based on the \textit{Billboard Top 100 Weekly Charts}\footnote{\url{https://www.billboard.com/charts/hot-100}} which feature the most played songs during one week. 
+
+\section{Bilder}
+Mit figure. Beim Kompilieren werden die Bilder automatisch an die beste stelle geschoben, also tauchen nicht immer direkt unterm Text auf. 
+Dies kann unterbunden werden mit [h] hinter figure.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{../img/htw_logo_pride}
+    \caption{HTW Logo}
+    \label{fig:enter-label}
+\end{figure}
+

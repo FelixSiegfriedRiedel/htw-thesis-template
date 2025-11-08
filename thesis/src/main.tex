@@ -1,0 +1,223 @@
+% --- Document Class and Global Settings ---
+% KOMA-Script report class: 12pt, oneside, A4 paper, DIV=12, binding correction, abstract, head sepline, normal headings, half-space paragraph skip, set to 'english'
+\documentclass[12pt,oneside,paper=A4,
+    BCOR=3cm,          % Bundsteg (binding correction)
+    DIV=12,            % Controls text area and outer margin (≈2.5 cm Außensteg)
+    headsep=3cm,       % Kopfsteg (distance from top to text)
+    footskip=2cm,      % Fußsteg (distance from bottom to footer)
+    abstract=true,
+    headsepline,
+    headings=normal,
+    parskip=half+,
+    english
+]{scrreprt}
+
+% Language and Encoding
+\usepackage{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc} % Font encoding
+
+% Page Layout and Spacing
+\usepackage[left=4cm, right=3cm, top=4cm, bottom=4cm]{geometry}
+\usepackage[onehalfspacing]{setspace}
+
+% --- Typography and Font Setup ---
+% Microtype for better typesetting (protrusion/expansion)
+\usepackage[activate={true,nocompatibility}]{microtype}
+% Font packages (Libertine for text, LibertinusT1Math for math)
+\usepackage{libertine}
+\usepackage{libertinust1math}
+
+
+% --- Math, Symbols, Units, and Chemistry ---
+\usepackage{amsmath}
+\usepackage{amsxtra}
+\usepackage{eurosym}
+\usepackage{siunitx} % For proper unit formatting
+\sisetup{locale=US}
+\usepackage[version=4]{mhchem} % For chemical formulae
+%\usepackage{units} % (Commented out)
+%\usepackage{cancel} % (Commented out)
+
+% --- Penalty Settings for Better Line Breaking ---
+% Prevent single lines at the top/bottom of pages (clubs and widows)
+\clubpenalty = 10000
+\widowpenalty = 10000
+\displaywidowpenalty = 10000
+
+% --- Floats (Images, Tables) and Code Inclusion ---
+\usepackage{graphicx}
+% Table Packages
+\usepackage{multirow,multicol,booktabs}
+\usepackage{threeparttable}
+\usepackage{longtable}
+\usepackage[table]{xcolor} % for \rowcolor in the table header
+\usepackage{rotating}
+\usepackage{ltablex}
+% Subfigures and Captions
+\usepackage{subfig}
+\captionsetup[subtable]{position=top}
+% PDF/Code Inclusion
+\usepackage{pdfpages}
+\usepackage{listings}
+
+% --- Footnotes and Notes ---
+\usepackage{footnote}
+\makesavenoteenv{tabular} % Allow footnotes in tabular environment
+
+% Packages for Control, Review, and Dummy Text
+\usepackage{todonotes}
+\usepackage{blindtext}
+
+% --- Bibliography and Citations (biblatex) ---
+\usepackage[
+    backend=biber,
+    style=numeric,
+    citestyle=authoryear,
+    maxbibnames=2,
+    giveninits=true
+]{biblatex}
+
+\renewcommand*{\labelnamepunct}{\addcolon\addspace}
+
+% Specify the location of the bibliography file
+\bibliography{main}
+
+% --- References and Links (Hyperref/Cleveref) ---
+% PDF metadata and hyperlinks
+% IMPORTANT: Update the contents of pdftitle, pdfsubject, etc.
+\usepackage[pdftitle={},pdfsubject={},pdfauthor={},pdfkeywords={}, hidelinks]{hyperref}
+% Clever referencing (needs to be loaded after hyperref)
+\usepackage[german]{cleveref}
+
+% --- URL/Link Formatting ---
+\usepackage[anythingbreaks]{breakurl}
+\usepackage{relsize}
+\renewcommand*{\UrlFont}{\ttfamily\relsize{-2}}
+% \urlstyle{same} % (Commented out)
+
+% --- Lists ---
+\usepackage{enumitem}
+
+% --- Glossary and Keywords ---
+% Glossary package
+\usepackage[automake]{glossaries}
+\makeglossaries
+
+% Keywords command
+\providecommand{\keywords}[1]
+{
+    \small
+    \textbf{\textit{Keywords---}} #1
+}
+
+% --- Custom Footnote Appearance ---
+% Define footnote marker to be left-aligned (1.5em indentation)
+\deffootnote{1.5em}{1em}{%
+    \makebox[1.5em][l]{\thefootnotemark}%
+}
+
+% Prevent footnotes from breaking across pages
+\interfootnotelinepenalty=10000
+
+% --- KOMA-Script Font/Caption Configuration ---
+% Caption and Titlepage Fonts
+\addtokomafont{caption}{\small}
+\setkomafont{captionlabel}{\sffamily\bfseries}
+\setkomafont{author}{\large}
+\setkomafont{date}{\large}
+\setkomafont{publishers}{\large}
+\addtokomafont{subtitle}{\vspace{1cm}}
+
+% \renewcaptionname{ngerman}{\figurename}{Abb.} % (Commented out)
+% \renewcaptionname{ngerman}{\tablename}{Tab.} % (Commented out)
+
+% --- Custom Environments ---
+% Environment for 10pt tabular
+\newenvironment{tabular10}{%
+    \fontsize{10}{12}\selectfont\tabular
+}{%
+    \endtabular
+}
+
+% Environment for 7pt tabular
+\newenvironment{tabular7}{%
+    \fontsize{7}{12}\selectfont\tabular
+}{%
+    \endtabular
+}
+
+% --- Appendix Setup ---
+% Package tools for appendix page numbering (e.g., A-1, B-1)
+\usepackage{etoolbox}
+\usepackage{chngcntr}
+
+\newcommand{\appendixpagenumbering}{
+    \renewcommand{\thepage}{\thechapter--\arabic{page}}
+    \setcounter{page}{1}
+}
+
+% Include the abbreviations file
+\include{98_abbreviations}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+    \lstset{basicstyle=\scriptsize\ttfamily,language={[LaTeX]TeX}}
+
+    \input{00_titlepage}
+    \thispagestyle{empty}
+    \clearpage
+
+    \pagenumbering{roman}
+    \setcounter{page}{1}
+    {
+        \pagestyle{plain}
+        \tableofcontents
+        \clearpage
+    }
+
+    \phantomsection
+    \listoffigures
+    \addcontentsline{toc}{chapter}{\listfigurename}
+    \thispagestyle{plain}
+    \clearpage
+
+    \listoftables
+    \phantomsection
+    \addcontentsline{toc}{chapter}{\listtablename}
+    \thispagestyle{plain}
+    \clearpage
+
+    \phantomsection
+    \lstlistoflistings
+    \addcontentsline{toc}{chapter}{Listings}
+    \thispagestyle{plain}
+    \clearpage
+
+    \input{97_ai_index}
+    \clearpage
+
+    \addcontentsline{toc}{chapter}{Abbreviations}
+    \printglossary[title={Abbreviations}]
+    \clearpage
+
+    \pagenumbering{arabic}
+    \setcounter{page}{1}
+    \pagestyle{headings}
+
+    \input{00_example}
+
+    \printbibliography[heading=bibintoc]
+
+    \input{96_eigenst}
+
+    \input{95_sperrvm}
+
+    \cleardoublepage
+    \appendix
+    \addtocontents{toc}{\string\contentsline{part}{Appendix}{}{}}
+    \input{99_apendix}
+
+\end{document}
