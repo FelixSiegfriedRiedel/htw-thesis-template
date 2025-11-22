@@ -1,7 +1,7 @@
 % --- Document Class and Global Settings ---
 % KOMA-Script report class: 12pt, oneside, A4 paper, DIV=12, binding correction, abstract, head sepline, normal headings, half-space paragraph skip, set to 'english'
 \documentclass[12pt,oneside,paper=A4,
-    BCOR=3cm,          % Bundsteg (binding correction)
+%BCOR=3cm,          % Bundsteg (binding correction)
     DIV=12,            % Controls text area and outer margin (≈2.5 cm Außensteg)
     headsep=3cm,       % Kopfsteg (distance from top to text)
     footskip=2cm,      % Fußsteg (distance from bottom to footer)
@@ -16,10 +16,6 @@
 \usepackage{babel}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc} % Font encoding
-
-% Page Layout and Spacing
-\usepackage[left=4cm, right=3cm, top=4cm, bottom=4cm]{geometry}
-\usepackage[onehalfspacing]{setspace}
 
 % --- Typography and Font Setup ---
 % Microtype for better typesetting (protrusion/expansion)
@@ -51,7 +47,7 @@
 \usepackage{multirow,multicol,booktabs}
 \usepackage{threeparttable}
 \usepackage{longtable}
-\usepackage[table]{xcolor} % for \rowcolor in the table header
+\usepackage{xcolor}
 \usepackage{rotating}
 \usepackage{ltablex}
 % Subfigures and Captions
@@ -60,6 +56,8 @@
 % PDF/Code Inclusion
 \usepackage{pdfpages}
 \usepackage{listings}
+\renewcommand{\lstlistingname}{Code} % singular
+\renewcommand{\lstlistlistingname}{List of Code Examples} % plural / list title
 
 % --- Footnotes and Notes ---
 \usepackage{footnote}
@@ -88,7 +86,7 @@
 % IMPORTANT: Update the contents of pdftitle, pdfsubject, etc.
 \usepackage[pdftitle={},pdfsubject={},pdfauthor={},pdfkeywords={}, hidelinks]{hyperref}
 % Clever referencing (needs to be loaded after hyperref)
-\usepackage[german]{cleveref}
+\usepackage[english]{cleveref}
 
 % --- URL/Link Formatting ---
 \usepackage[anythingbreaks]{breakurl}
@@ -164,8 +162,61 @@
 
 \begin{document}
 
-    \lstset{basicstyle=\scriptsize\ttfamily,language={[LaTeX]TeX}}
+    \definecolor{keywordcolor}{rgb}{0.0,0.0,0.8}      % dark blue
+    \definecolor{commentcolor}{rgb}{0.0,0.5,0.0}      % green
+    \definecolor{stringcolor}{rgb}{0.58,0,0.82}       % purple
+    \definecolor{functioncolor}{rgb}{0.25,0.25,0.7}   % darkish blue
+    \definecolor{numbercolor}{rgb}{0.5,0.0,0.0}       % dark red
 
+    % Global style for main text listings
+    \lstdefinestyle{mainpython}{
+        language=Python,
+        numbers=left,
+        numberstyle=\tiny\color{black},
+        stepnumber=1,
+        numbersep=5pt,
+        frame=single,
+        rulecolor=\color{black},
+        backgroundcolor=\color{white},
+        basicstyle=\ttfamily\scriptsize,
+        keywordstyle=\color{keywordcolor}\bfseries,
+        commentstyle=\color{commentcolor}\itshape,
+        stringstyle=\color{stringcolor},
+        identifierstyle=\color{black},
+        emph={print,range,len},
+        emphstyle=\color{functioncolor}\bfseries,
+        morekeywords={self},
+        showstringspaces=false,
+        captionpos=b,
+        breaklines=true,
+        breakatwhitespace=true,
+        float,
+        floatplacement=htbp,
+    }
+
+    % Style for appendix listings
+    \lstdefinestyle{appendixpython}{
+        language=Python,
+        numbers=none,
+        frame=single,
+        rulecolor=\color{black},
+        backgroundcolor=\color{white},
+        basicstyle=\ttfamily\tiny,
+        keywordstyle=\color{keywordcolor}\bfseries,
+        commentstyle=\color{commentcolor}\itshape,
+        stringstyle=\color{stringcolor},
+        identifierstyle=\color{black},
+        emph={print,range,len},
+        emphstyle=\color{functioncolor}\bfseries,
+        morekeywords={self},
+        showstringspaces=false,
+        captionpos=b,
+        breaklines=true,
+        breakatwhitespace=true,
+        float=false                   % no float
+    }
+
+    \pagenumbering{gobble}
     \input{00_titlepage}
     \thispagestyle{empty}
     \clearpage
@@ -192,16 +243,17 @@
 
     \phantomsection
     \lstlistoflistings
-    \addcontentsline{toc}{chapter}{Listings}
+    \addcontentsline{toc}{chapter}{List of Code Examples}
     \thispagestyle{plain}
     \clearpage
 
+    \phantomsection
     \input{97_ai_index}
     \clearpage
 
-    \addcontentsline{toc}{chapter}{Abbreviations}
     \printglossary[title={Abbreviations}]
-    \clearpage
+    \addcontentsline{toc}{chapter}{Abbreviations}
+    \cleardoublepage
 
     \pagenumbering{arabic}
     \setcounter{page}{1}
