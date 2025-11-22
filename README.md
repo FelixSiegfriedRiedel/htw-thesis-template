@@ -33,6 +33,14 @@ They should be on your system once you installed Texify and TexLive.
 ### pdfLaTeX 
 ![img_1.png](thesis/img/pdf_settings.png)
 
+### Glossaries
+
+For glossaries to work the terminal command `makeglossaries` needs to run.
+You need to define it as an external tool in IntelliJ.
+
+![img.png](thesis/img/glossaries.png)
+
+
 ## Document Language
 
 The document language is English (except for one abstract which is german).
@@ -44,8 +52,6 @@ Use babel to change the language to your preferences:
     ...
 \end{document}
 ```
-
-![img_2.png](thesis/img/german_toc.png)
 
 Make sure to change the language after `\begin{document}`.
 This will apply to automatic titles which are generate by `\tableofcontents`, `\listoffigures` or similar commands.
