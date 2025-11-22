@@ -1,51 +1,56 @@
 \chapter{Basics}
-Zeilenumbrüche mit \textbackslash \textbackslash \\
-\textbf{fetter Text} mit \textbackslash textbf (Str+B) \\
-\textit{kursiver Text} mit \textbackslash textit (Str+I) 
-\par Neuer Absatz mit \textbackslash par
-\par \textbackslash chapter\{\}, \textbackslash section\{\}, \textbackslash subsection\{\}, \textbackslash subsubsection\{\} erstellt Abschnitte, Kapitel 
+Line breaks with \textbackslash \textbackslash \\
+\textbf{bold text} with \textbackslash textbf (Ctrl+B) \\
+\textit{italic text} with \textbackslash textit (Ctrl+I)
+\par New paragraph with \textbackslash par
+\par \textbackslash chapter\{\}, \textbackslash section\{\}, \textbackslash subsection\{\}, \textbackslash subsubsection\{\} creates sections, chapters
 
 
-\section{Abschnitt}
-\subsection{Unterabschnitt}
-\subsubsection{Unterunterabschnitt}
+\section{Section}
+\subsection{Subsection}
+\subsubsection{Sub-subsection}
 
 
-\section{Quellenangaben}
-\subsection{Im Text}
-\textbackslash cite[Vgl.][]\{Name der Quelle im Verzeichnis\}
+\section{References}
+\subsection{In-text}
+\textbackslash cite[]\{Name of the source in bibliography\}
 % glossary entries with gls
-\par \gls{LLM}s have been heavily researched for the past 10 years (\cite[Cf.][]{sunSurveyLargeLanguagea})
+\par \gls{LLM}s have been heavily researched for the past 10 years (\cite[]{sunSurveyLargeLanguagea})
 
-\subsection{Referenzierung von Titel oder Autor}
-\textbackslash citeauthor oder \textbackslash citetitle
-\par Though there is a study published by \citeauthor{sunSurveyLargeLanguagea} which examines how \gls{LLM}s work: \citetitle{sunSurveyLargeLanguagea}.
+\subsection{Referencing Title or Author}
+\textbackslash citeauthor or \textbackslash citetitle
+\par Though there is a study published by \citeauthor{sunSurveyLargeLanguagea} which examines how \gls{LLM}s work:~\citetitle{sunSurveyLargeLanguagea}.
 
-\section{Aufzählungen}
-enumerate bzw. itemize
+\section{Lists}
+enumerate or itemize
 \begin{enumerate}
-    \item Eins
-    \item Zwei
-    \item Drei
+    \item One
+    \item Two
+    \item Three
 \end{enumerate}
 
 \begin{itemize}
-    \item Stichpunkt
-    \item Stichpunkt
-    \item Stichpunkt
+    \item Bullet point
+    \item Bullet point
+    \item Bullet point
 \end{itemize}
 
-\section{Fußnoten}
+\section{Footnotes}
 
-Only songs with the biggest appeal to the public will be analysed. The song selection is based on the \textit{Billboard Top 100 Weekly Charts}\footnote{\url{https://www.billboard.com/charts/hot-100}} which feature the most played songs during one week. 
+Only songs with the biggest appeal to the public will be analysed. The song selection is based on the \textit{Billboard Top 100 Weekly Charts}\footnote{\url{https://www.billboard.com/charts/hot-100}} which feature the most played songs during one week.
 
-\section{Bilder}
-Mit figure. Beim Kompilieren werden die Bilder automatisch an die beste stelle geschoben, also tauchen nicht immer direkt unterm Text auf. 
-Dies kann unterbunden werden mit [h] hinter figure.
+\section{Images}
+With figure. When compiling, images are automatically moved to the best position, so they do not always appear directly below the text.
+This can be prevented with [h] after figure.
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.8\textwidth]{../img/htw_logo_pride}
     \caption{HTW Logo}
     \label{fig:enter-label}
 \end{figure}
+\section{Code}
 
+\begin{lstlisting}[caption={Hello World}, label={lst:hello}, style=mainpython]
+    #example code listing
+    print("Hello World")
+\end{lstlisting}

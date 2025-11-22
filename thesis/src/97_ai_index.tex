@@ -1,30 +1,14 @@
 \cleardoublepage
-
-% Add title to the main Table of Contents
 \addchap*{List of AI Models and Tools}
 \addcontentsline{toc}{chapter}{List of AI Models and Tools}
 
 \begin{center}
-\begin{longtable}{| p{3cm} | p{3.5cm} | p{7cm} |}
-\hline
-\rowcolor{lightgray}
-\textbf{AI Tool} & \textbf{Section} & \textbf{Purpose of Use} \\
-\hline
-\endhead
-
-\hline
-\endfoot
-
---------
-% IMPORTANT: Manually populate the AI Tool entries here, e.g.:
---------
-
-Gemini 1.5 Pro & Chapter 4.1 & Core model for generating Text-to-SQL queries and managing conversational context through its powerful reasoning and large context window. \\
-\hline
-MemGPT & Chapter 2.2 & Implemented as the memory management layer to store key user intentions and domain schema information beyond the LLM's primary context limit. \\
-\hline
-Faiss & Chapter 4.3 & Vector database used for efficient similarity search, retrieving relevant context (long-term memory) to inject into the LLM's prompt. \\
-\hline
-
-\end{longtable}
+    \begin{tabularx}{\textwidth}{X X X}
+        \toprule
+        \textbf{AI Tool} & \textbf{Section} & \textbf{Purpose of Use} \\
+        \midrule
+        DeepL & Blocking Notice & Translation of the blocking notice (Sperrvermerk) into English. \\
+        DeepL & Declaration of Authorship & Translation of the declaration of authorship (Eigenständigkeitserklärung) into English. \\
+        \bottomrule
+    \end{tabularx}
 \end{center}

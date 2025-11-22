@@ -1,7 +1,7 @@
 % --- Document Class and Global Settings ---
 % KOMA-Script report class: 12pt, oneside, A4 paper, DIV=12, binding correction, abstract, head sepline, normal headings, half-space paragraph skip, set to 'english'
 \documentclass[12pt,oneside,paper=A4,
-%BCOR=3cm,          % Bundsteg (binding correction)
+%BCOR=3cm,          % Bundsteg (binding correction) only relevant for printing
     DIV=12,            % Controls text area and outer margin (≈2.5 cm Außensteg)
     headsep=3cm,       % Kopfsteg (distance from top to text)
     footskip=2cm,      % Fußsteg (distance from bottom to footer)
@@ -11,6 +11,10 @@
     parskip=half+,
     english
 ]{scrreprt}
+
+% Set 1.5 line spacing
+\usepackage{setspace}
+\onehalfspacing
 
 % Language and Encoding
 \usepackage{babel}
@@ -30,7 +34,7 @@
 \usepackage{amsxtra}
 \usepackage{eurosym}
 \usepackage{siunitx} % For proper unit formatting
-\sisetup{locale=US}
+\sisetup{locale=UK}
 \usepackage[version=4]{mhchem} % For chemical formulae
 %\usepackage{units} % (Commented out)
 %\usepackage{cancel} % (Commented out)
@@ -84,7 +88,14 @@
 % --- References and Links (Hyperref/Cleveref) ---
 % PDF metadata and hyperlinks
 % IMPORTANT: Update the contents of pdftitle, pdfsubject, etc.
-\usepackage[pdftitle={},pdfsubject={},pdfauthor={},pdfkeywords={}, hidelinks]{hyperref}
+\usepackage[
+    pdftitle={},
+    pdfsubject={},
+    pdfauthor={},
+    pdfcreator={},
+    pdfkeywords={},
+    pdfproducer={LaTeX (Template created by Felix Siegfried Riedel. GitHub: https://github.com/FelixSiegfriedRiedel/htw-thesis-template)},
+    hidelinks]{hyperref}
 % Clever referencing (needs to be loaded after hyperref)
 \usepackage[english]{cleveref}
 
@@ -161,6 +172,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
+
+    %\selectlanguage{ngerman}
 
     \definecolor{keywordcolor}{rgb}{0.0,0.0,0.8}      % dark blue
     \definecolor{commentcolor}{rgb}{0.0,0.5,0.0}      % green

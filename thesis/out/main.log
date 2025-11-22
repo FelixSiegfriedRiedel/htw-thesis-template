@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.7.22)  22 NOV 2025 15:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.7.22)  22 NOV 2025 17:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -147,6 +147,9 @@ Package tocbasic Info: omitting babel extension for `lot'
 \c@table=\count271
 Class scrreprt Info: Redefining `\numberline' on input line 7457.
 \bibindent=\dimen141
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2022/12/04 v6.7b set line spacing
 )
 (/usr/local/texlive/2025/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2025/02/14 v25.4 The multilingual framework for pdfLaTeX, LuaLaT
@@ -691,7 +694,7 @@ Package: longtable 2024-10-27 v4.22 Multi-page Table package (DPC)
 \c@LT@chunks=\count331
 \LT@p@ftn=\toks33
 )
-Class scrreprt Info: longtable captions redefined on input line 50.
+Class scrreprt Info: longtable captions redefined on input line 54.
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
@@ -1537,6 +1540,25 @@ Package: enumitem 2025/02/06 v3.11 Customized lists
 \enit@count@id=\count531
 \enitdp@description=\count532
 )
+./main.tex:114: Undefined control sequence.
+l.114 \makeglossaries
+                     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/chngcntr/chngcntr.sty
+Package: chngcntr 2018/04/09 v1.1a change counter resetting
+Package chngcntr Info: \counterwithout already defined.
+(chngcntr)             Quitting chngcntr on input line 21.
+)
+
+LaTeX Warning: \include should only be used after \begin{document} on input lin
+e 170.
+
+(./98_abbreviations.tex
 (/usr/local/texlive/2025/texmf-dist/tex/latex/glossaries/base/glossaries.sty
 Package: glossaries 2025/03/03 v4.56 (NLCT)
 
@@ -1669,17 +1691,8 @@ ate/thesis/out"/main.glo)...quotation error in system command.
 \glo@main@file=\write6
 \openout6 = `main.glo'.
 
-Package glossaries Info: Writing glossary file main.glo on input line 103.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/chngcntr/chngcntr.sty
-Package: chngcntr 2018/04/09 v1.1a change counter resetting
-Package chngcntr Info: \counterwithout already defined.
-(chngcntr)             Quitting chngcntr on input line 21.
+Package glossaries Info: Writing glossary file main.glo on input line 3.
 )
-
-LaTeX Warning: \include should only be used after \begin{document} on input lin
-e 159.
-
-(./98_abbreviations.tex)
 
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
@@ -1689,10 +1702,10 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 
 Package biblatex Warning: Conflicting options.
 (biblatex)                '<namepart>inits' conflicts with 'uniquename=full'.
-(biblatex)                Setting 'uniquename=init' on input line 163.
+(biblatex)                Setting 'uniquename=init' on input line 174.
 
 LaTeX Font Info:    Trying to load font information for T1+LinuxLibertineT-TLF 
-on input line 163.
+on input line 174.
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/libertine/T1LinuxLibertineT-TLF.f
 d
@@ -1700,7 +1713,7 @@ File: T1LinuxLibertineT-TLF.fd 2017/03/20 (autoinst) Font definitions for T1/Li
 nuxLibertineT-TLF.
 )
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 163.
+(Font)              scaled to size 12.0pt on input line 174.
 
 
 LaTeX Warning: Unused global option(s):
@@ -1714,71 +1727,71 @@ Package babel Info: Importing data for ngerman
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 163.
-LaTeX Font Info:    ... okay on input line 163.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 163.
-LaTeX Font Info:    ... okay on input line 163.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 163.
-LaTeX Font Info:    ... okay on input line 163.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 163.
-LaTeX Font Info:    ... okay on input line 163.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 163.
-LaTeX Font Info:    ... okay on input line 163.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 163.
-LaTeX Font Info:    ... okay on input line 163.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 163.
-LaTeX Font Info:    ... okay on input line 163.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 174.
+LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 174.
+LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 174.
+LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 174.
+LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 174.
+LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 174.
+LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 174.
+LaTeX Font Info:    ... okay on input line 174.
 LaTeX Font Info:    Checking defaults for LS1/libertinust1math/m/n on input lin
-e 163.
+e 174.
 LaTeX Font Info:    Trying to load font information for LS1+libertinust1math on
- input line 163.
+ input line 174.
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/libertinust1math/ls1libertinust1m
 ath.fd
 File: ls1libertinust1math.fd 2016/03/23 Fontinst v1.933 font definitions for LS
 1/libertinust1math.
 )
-LaTeX Font Info:    ... okay on input line 163.
+LaTeX Font Info:    ... okay on input line 174.
 LaTeX Font Info:    Checking defaults for LS2/libertinust1mathsym/m/n on input 
-line 163.
+line 174.
 LaTeX Font Info:    Trying to load font information for LS2+libertinust1mathsym
- on input line 163.
+ on input line 174.
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/libertinust1math/ls2libertinust1m
 athsym.fd
 File: ls2libertinust1mathsym.fd 2015/04/17 v1.1.2-latex LibertinusT1Mathsym LS2
  font definitions
 )
-LaTeX Font Info:    ... okay on input line 163.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 163.
-LaTeX Font Info:    ... okay on input line 163.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 163.
-LaTeX Font Info:    ... okay on input line 163.
-Package scrbase Info: activating english \abstractname on input line 163.
-Package scrbase Info: activating english \partname on input line 163.
-Package scrbase Info: activating english \chaptername on input line 163.
-Package scrbase Info: activating english \appendixname on input line 163.
-Package scrbase Info: activating english \figurename on input line 163.
-Package scrbase Info: activating english \tablename on input line 163.
-Package scrbase Info: activating english \contentsname on input line 163.
-Package scrbase Info: activating english \listfigurename on input line 163.
-Package scrbase Info: activating english \listtablename on input line 163.
-Package scrbase Info: activating english \bibname on input line 163.
-Package scrbase Info: activating english \indexname on input line 163.
-LaTeX Info: Redefining \microtypecontext on input line 163.
-Package microtype Info: Applying patch `item' on input line 163.
-Package microtype Info: Applying patch `toc' on input line 163.
-Package microtype Info: Applying patch `eqnum' on input line 163.
-Package microtype Info: Applying patch `footnote' on input line 163.
-Package microtype Info: Applying patch `verbatim' on input line 163.
-LaTeX Info: Redefining \microtypesetup on input line 163.
+LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 174.
+LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 174.
+LaTeX Font Info:    ... okay on input line 174.
+Package scrbase Info: activating english \abstractname on input line 174.
+Package scrbase Info: activating english \partname on input line 174.
+Package scrbase Info: activating english \chaptername on input line 174.
+Package scrbase Info: activating english \appendixname on input line 174.
+Package scrbase Info: activating english \figurename on input line 174.
+Package scrbase Info: activating english \tablename on input line 174.
+Package scrbase Info: activating english \contentsname on input line 174.
+Package scrbase Info: activating english \listfigurename on input line 174.
+Package scrbase Info: activating english \listtablename on input line 174.
+Package scrbase Info: activating english \bibname on input line 174.
+Package scrbase Info: activating english \indexname on input line 174.
+LaTeX Info: Redefining \microtypecontext on input line 174.
+Package microtype Info: Applying patch `item' on input line 174.
+Package microtype Info: Applying patch `toc' on input line 174.
+Package microtype Info: Applying patch `eqnum' on input line 174.
+Package microtype Info: Applying patch `footnote' on input line 174.
+Package microtype Info: Applying patch `verbatim' on input line 174.
+LaTeX Info: Redefining \microtypesetup on input line 174.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 163.
+LaTeX Info: Redefining \showhyphens on input line 174.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1788,8 +1801,8 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 \c@mv@tabular=\count562
 \c@mv@boldtabular=\count563
-LaTeX Info: Command `\dddot' is already robust on input line 163.
-LaTeX Info: Command `\ddddot' is already robust on input line 163.
+LaTeX Info: Command `\dddot' is already robust on input line 174.
+LaTeX Info: Command `\ddddot' is already robust on input line 174.
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/translations/translations-basic-d
 ictionary-english.trsl
@@ -1797,9 +1810,9 @@ File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `english'. on input line 163.
+or `english'. on input line 174.
 
-Package chemgreek Info: Activating mapping `default' on line 163.
+Package chemgreek Info: Activating mapping `default' on line 174.
 
 
 (/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -1844,14 +1857,14 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ))
 \c@lstlisting=\count570
-Package tocbasic Info: setting babel extension for `lol' on input line 163.
+Package tocbasic Info: setting babel extension for `lol' on input line 174.
 \scr@dte@lstlisting@maxnumwidth=\skip133
 
 
 Package todonotes Warning: The length marginparwidth is less than 2cm and will 
 most likely cause issues with the appearance of inserted todonotes. The issue c
 an be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to 
-loading the todonotes package. on input line 163.
+loading the todonotes package. on input line 174.
 
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
@@ -1884,9 +1897,9 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
 
 (/Users/felixriedel/Documents/GitHub/htw-thesis-template/thesis/out/main.bbl)
-Package biblatex Info: Reference section=0 on input line 163.
-Package biblatex Info: Reference segment=0 on input line 163.
-Package hyperref Info: Link coloring OFF on input line 163.
+Package biblatex Info: Reference section=0 on input line 174.
+Package biblatex Info: Reference segment=0 on input line 174.
+Package hyperref Info: Link coloring OFF on input line 174.
 
 (/Users/felixriedel/Documents/GitHub/htw-thesis-template/thesis/out/main.out)
 (/Users/felixriedel/Documents/GitHub/htw-thesis-template/thesis/out/main.out)
@@ -1900,7 +1913,7 @@ Class scrreprt Info: loading recommended package `bookmark'.
 (scrreprt)           `bookmarkpackage=false' before \begin{document} and
 (scrreprt)           you can avoid this message adding:
 (scrreprt)             \usepackage{bookmark}
-(scrreprt)           before \begin{document} on input line 163.
+(scrreprt)           before \begin{document} on input line 174.
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
@@ -2037,48 +2050,51 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.222     \clearpage
+l.235     \clearpage
                      [3{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/libe
 rtine/lbtn_25tcsq.enc}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/liber
 tine/lbtn_ki75ao.enc}]
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 228.
+(Font)              scaled to size 12.0pt on input line 241.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
-(Font)              scaled to size 12.0pt on input line 228.
+(Font)              scaled to size 12.0pt on input line 241.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
-(Font)              scaled to size 20.74pt on input line 228.
-Package tocbasic Info: character protrusion at toc deactivated on input line 22
-8.
+(Font)              scaled to size 20.74pt on input line 241.
+Package tocbasic Info: character protrusion at toc deactivated on input line 24
+1.
 
 (/Users/felixriedel/Documents/GitHub/htw-thesis-template/thesis/out/main.toc
 Package cleveref Info: loaded `english' language definitions on input line 1.
 Package cleveref Info: loaded `english' language definitions on input line 3.
-Package cleveref Info: loaded `english' language definitions on input line 22.
-Package cleveref Info: loaded `english' language definitions on input line 25.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
-(Font)              scaled to size 14.4pt on input line 26.
+(Font)              scaled to size 14.4pt on input line 23.
 
-Overfull \hbox (2.11197pt too wide) detected at line 27
+Overfull \hbox (2.11197pt too wide) detected at line 24
  []\T1/LinuxBiolinumT-TLF/b/n/12 A--1
  []
 
 
-Overfull \hbox (2.24396pt too wide) detected at line 28
+
+[1
+
+
+]
+Overfull \hbox (2.24396pt too wide) detected at line 25
  []\T1/LinuxBiolinumT-TLF/b/n/12 B--1
  []
 
 
-Overfull \hbox (0.61197pt too wide) detected at line 29
+Overfull \hbox (0.61197pt too wide) detected at line 26
  []\T1/LinuxLibertineT-TLF/m/n/12 B--1
  []
 
 
-Overfull \hbox (2.61597pt too wide) detected at line 30
+Overfull \hbox (2.61597pt too wide) detected at line 27
  []\T1/LinuxBiolinumT-TLF/b/n/12 C--1
  []
 
 
-Overfull \hbox (3.27596pt too wide) detected at line 31
+Overfull \hbox (3.27596pt too wide) detected at line 28
  []\T1/LinuxBiolinumT-TLF/b/n/12 D--1
  []
 
@@ -2088,20 +2104,13 @@ Overfull \hbox (3.27596pt too wide) detected at line 31
 
 
 
-[1
-
-
-]
-
 [2]
-Package tocbasic Info: character protrusion at lof deactivated on input line 23
-3.
+Package tocbasic Info: character protrusion at lof deactivated on input line 24
+6.
 
 (/Users/felixriedel/Documents/GitHub/htw-thesis-template/thesis/out/main.lof
 Package cleveref Info: loaded `english' language definitions on input line 1.
 Package cleveref Info: loaded `english' language definitions on input line 3.
-Package cleveref Info: loaded `english' language definitions on input line 8.
-Package cleveref Info: loaded `english' language definitions on input line 10.
 )
 \tf@lof=\write9
 \openout9 = `main.lof'.
@@ -2112,14 +2121,12 @@ Package cleveref Info: loaded `english' language definitions on input line 10.
 
 
 ]
-Package tocbasic Info: character protrusion at lot deactivated on input line 23
-8.
+Package tocbasic Info: character protrusion at lot deactivated on input line 25
+1.
 
 (/Users/felixriedel/Documents/GitHub/htw-thesis-template/thesis/out/main.lot
 Package cleveref Info: loaded `english' language definitions on input line 1.
 Package cleveref Info: loaded `english' language definitions on input line 3.
-Package cleveref Info: loaded `english' language definitions on input line 7.
-Package cleveref Info: loaded `english' language definitions on input line 9.
 )
 \tf@lot=\write10
 \openout10 = `main.lot'.
@@ -2130,14 +2137,12 @@ Package cleveref Info: loaded `english' language definitions on input line 9.
 
 
 ]
-Package tocbasic Info: character protrusion at lol deactivated on input line 24
-5.
+Package tocbasic Info: character protrusion at lol deactivated on input line 25
+8.
 
 (/Users/felixriedel/Documents/GitHub/htw-thesis-template/thesis/out/main.lol
 Package cleveref Info: loaded `english' language definitions on input line 1.
 Package cleveref Info: loaded `english' language definitions on input line 3.
-Package cleveref Info: loaded `english' language definitions on input line 7.
-Package cleveref Info: loaded `english' language definitions on input line 9.
 )
 \tf@lol=\write11
 \openout11 = `main.lol'.
@@ -2148,19 +2153,10 @@ Package cleveref Info: loaded `english' language definitions on input line 9.
 
 
 ] (./97_ai_index.tex
-./97_ai_index.tex:10: Undefined control sequence.
-<recently read> \rowcolor 
-                          
-l.10 \rowcolor
-              {lightgray}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+Underfull \hbox (badness 1097) in paragraph at lines 13--13
+\T1/LinuxLibertineT-TLF/m/n/12 (+20) tion of au-thor-ship (Eigen-
+ []
 
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 12.0pt on input line 11.
 )
 
 [6
@@ -2178,17 +2174,17 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
 ] (./00_example.tex
 chapter 1.
 
-Overfull \hbox (71.37509pt too wide) in paragraph at lines 6--7
+Overfull \hbox (65.18329pt too wide) in paragraph at lines 6--7
 []\T1/LinuxLibertineT-TLF/m/n/12 (-20) \chapter{}, \sec-tion{}, \sub-sec-tion{}
-, \sub-sub-sec-tion{} er-stellt Ab-schnitte, Kapi-tel 
+, \sub-sub-sec-tion{} cre-ates sec-tions, chap-ters 
  []
 
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
 (Font)              scaled to size 17.28pt on input line 9.
 
-Overfull \hbox (54.4106pt too wide) in paragraph at lines 18--19
+Overfull \hbox (38.57843pt too wide) in paragraph at lines 18--19
 [][][]\T1/LinuxLibertineT-TLF/m/n/12 (-20) LLM[]s have been heav-ily re-searche
-d for the past 10 years (Cf. Sun et al. []2025[]) 
+d for the past 10 years (Sun et al. []2025[]) 
  []
 
 
@@ -2296,77 +2292,96 @@ LaTeX Font Info:    Font shape `LS1/libertinust1math/b/it' will be
 (Font)              scaled to size 5.55557pt on input line 40.
 LaTeX Font Info:    Font shape `LS1/libertinust1math/b/it' will be
 (Font)              scaled to size 4.51385pt on input line 40.
-<../img/htw_logo_pride.png, id=128, 1545.775pt x 853.1875pt>
+<../img/htw_logo_pride.png, id=131, 1545.775pt x 853.1875pt>
 File: ../img/htw_logo_pride.png Graphic file (type png)
 <use ../img/htw_logo_pride.png>
 Package pdftex.def Info: ../img/htw_logo_pride.png  used on input line 47.
 (pdftex.def)             Requested size: 358.50612pt x 197.86934pt.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-)
-
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/sl' in size <12> not a
 vailable
 (Font)              Font shape `T1/LinuxLibertineT-TLF/m/it' tried instead on i
-nput line 264.
+nput line 51.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 12.0pt on input line 264.
-Package cleveref Info: loaded `english' language definitions on input line 264.
+(Font)              scaled to size 12.0pt on input line 51.
+Package cleveref Info: loaded `english' language definitions on input line 51.
+
+Overfull \vbox (1.76944pt too high) has occurred while \output is active []
+
 
 [2{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/libertine/lbtn_naooyc.enc
 }{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/libertine/lbtn_dhi6qf.enc}
-]
+] (/usr/local/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2024/09/23 1.10c listings language file
+)
+LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/m/n' in size <12> no
+t available
+(Font)              Font shape `T1/LinuxLibertineMonoT-TLF/regular/n' tried ins
+tead on input line 53.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/regular/n' will be
+(Font)              scaled to size 12.0pt on input line 53.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/m/n' in size <8> not
+ available
+(Font)              Font shape `T1/LinuxLibertineMonoT-TLF/regular/n' tried ins
+tead on input line 53.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/regular/n' will be
+(Font)              scaled to size 8.0pt on input line 53.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 6.0pt on input line 54.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/m/it' in size <8> no
+t available
+(Font)              Font shape `T1/LinuxLibertineMonoT-TLF/regular/it' tried in
+stead on input line 54.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/regular/it' in size 
+<8> not available
+(Font)              Font shape `T1/LinuxLibertineMonoT-TLF/regular/sl' tried in
+stead on input line 54.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/regular/sl' will be
+(Font)              scaled to size 8.0pt on input line 54.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/b/n' in size <8> not
+ available
+(Font)              Font shape `T1/LinuxLibertineMonoT-TLF/bold/n' tried instea
+d on input line 55.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/bold/n' will be
+(Font)              scaled to size 8.0pt on input line 55.
+)
 
-Package cleveref Info: loaded `english' language definitions on input line 264.
+Package cleveref Info: loaded `english' language definitions on input line 277.
+
+
+Overfull \vbox (1.76944pt too high) has occurred while \output is active []
+
 
 [3 </Users/felixriedel/Documents/GitHub/htw-thesis-template/thesis/out/../img/h
 tw_logo_pride.png>]
 chapter without number
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/sc' will be
-(Font)              scaled to size 12.0pt on input line 264.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/m/n' in size <12> no
-t available
-(Font)              Font shape `T1/LinuxLibertineMonoT-TLF/regular/n' tried ins
-tead on input line 264.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/regular/n' will be
-(Font)              scaled to size 12.0pt on input line 264.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/m/n' in size <8> not
- available
-(Font)              Font shape `T1/LinuxLibertineMonoT-TLF/regular/n' tried ins
-tead on input line 264.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/regular/n' will be
-(Font)              scaled to size 8.0pt on input line 264.
+(Font)              scaled to size 12.0pt on input line 277.
 LaTeX Font Info:    Font shape `LS1/libertinust1math/m/n' will be
-(Font)              scaled to size 5.0pt on input line 264.
+(Font)              scaled to size 5.0pt on input line 277.
 LaTeX Font Info:    Font shape `LS1/libertinust1math/m/it' will be
-(Font)              scaled to size 5.0pt on input line 264.
+(Font)              scaled to size 5.0pt on input line 277.
 LaTeX Font Info:    Font shape `LS2/libertinust1mathsym/m/n' will be
-(Font)              scaled to size 5.0pt on input line 264.
+(Font)              scaled to size 5.0pt on input line 277.
 LaTeX Font Info:    Font shape `LS2/libertinust1mathex/m/n' will be
-(Font)              scaled to size 5.0pt on input line 264.
+(Font)              scaled to size 5.0pt on input line 277.
 LaTeX Font Info:    Font shape `LS1/libertinust1mathbb/m/n' will be
-(Font)              scaled to size 5.0pt on input line 264.
+(Font)              scaled to size 5.0pt on input line 277.
 LaTeX Font Info:    Font shape `LS1/libertinust1math/b/n' will be
-(Font)              scaled to size 5.0pt on input line 264.
+(Font)              scaled to size 5.0pt on input line 277.
 LaTeX Font Info:    Font shape `LS1/libertinust1math/b/it' will be
-(Font)              scaled to size 5.0pt on input line 264.
+(Font)              scaled to size 5.0pt on input line 277.
 (./96_eigenst.tex
 
 [4
 
 {/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/libertine/lbtn_ncsllp.enc}]
-Package cleveref Info: loaded `english' language definitions on input line 15.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 6.0pt on input line 20.
 ) (./95_sperrvm.tex
 
 [5
 
-]
-Package cleveref Info: loaded `english' language definitions on input line 17.
-)
+])
 
 [6
 
@@ -2404,7 +2419,7 @@ chapter C.
 chapter D.
 )
 
-Package caption Warning: Unused \captionsetup[subtable] on input line 55.
+Package caption Warning: Unused \captionsetup[subtable] on input line 59.
 See the caption package documentation for explanation.
 
 
@@ -2415,8 +2430,6 @@ See the caption package documentation for explanation.
 (/Users/felixriedel/Documents/GitHub/htw-thesis-template/thesis/out/main.aux
 Package cleveref Info: loaded `english' language definitions on input line 16.
 Package cleveref Info: loaded `english' language definitions on input line 18.
-Package cleveref Info: loaded `english' language definitions on input line 73.
-Package cleveref Info: loaded `english' language definitions on input line 77.
 )
  ***********
 LaTeX2e <2024-11-01> patch level 2
@@ -2425,9 +2438,6 @@ L3 programming layer <2025-01-18>
 
 
 LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
@@ -2439,41 +2449,27 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 54791 strings out of 473190
- 1137880 string characters out of 5715800
- 2189576 words of memory out of 5000000
- 76978 multiletter control sequences out of 15000+600000
- 727410 words of font info for 258 fonts, out of 8000000 for 9000
+ 55248 strings out of 473190
+ 1142527 string characters out of 5715800
+ 2191115 words of memory out of 5000000
+ 77446 multiletter control sequences out of 15000+600000
+ 726862 words of font info for 247 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 108i,8n,133p,10899b,2540s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-pdfTeX warning (dest): name{figure.caption.13} has been referenced but does not
- exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{chapter*.17} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{chapter*.14} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{chapter*.8} has been referenced but does not exist,
- replaced by a fixed one
-
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/libertine/LinBiolinumTB.
-pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/libertine/LinLiberti
-neMT.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/libertine/LinLi
-bertineT.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/libertine/L
-inLibertineTB.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/libert
-ine/LinLibertineTBI.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/
-libertine/LinLibertineTI.pfb>
+ 108i,8n,133p,10899b,3378s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/libertine/LinBiolinumT
+B.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/libertine/LinLiber
+tineMT.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/libertine/Lin
+LibertineMTB.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/liberti
+ne/LinLibertineMTO.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/l
+ibertine/LinLibertineT.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/publ
+ic/libertine/LinLibertineTB.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1
+/public/libertine/LinLibertineTBI.pfb></usr/local/texlive/2025/texmf-dist/fonts
+/type1/public/libertine/LinLibertineTI.pfb>
 Output written on /Users/felixriedel/Documents/GitHub/htw-thesis-template/thesi
-s/out/main.pdf (21 pages, 480419 bytes).
+s/out/main.pdf (21 pages, 521241 bytes).
 PDF statistics:
- 312 PDF objects out of 1000 (max. 8388607)
- 269 compressed objects within 3 object streams
+ 327 PDF objects out of 1000 (max. 8388607)
+ 280 compressed objects within 3 object streams
  69 named destinations out of 1000 (max. 500000)
- 94919 words of extra memory for PDF output out of 106986 (max. 10000000)
+ 95951 words of extra memory for PDF output out of 106986 (max. 10000000)
 
