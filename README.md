@@ -40,6 +40,7 @@ You need to define it as an external tool in IntelliJ.
 
 ![img.png](thesis/img/glossaries.png)
 
+Note: Make sure to set the right out folder
 
 ## Document Language
 

@@ -83,7 +83,7 @@
 \renewcommand*{\labelnamepunct}{\addcolon\addspace}
 
 % Specify the location of the bibliography file
-\bibliography{main}
+\addbibresource{main.bib}
 
 % --- References and Links (Hyperref/Cleveref) ---
 % PDF metadata and hyperlinks
@@ -112,6 +112,8 @@
 % Glossary package
 \usepackage[automake]{glossaries}
 \makeglossaries
+% Include the abbreviations file
+\include{98_abbreviations}
 
 % Keywords command
 \providecommand{\keywords}[1]
@@ -166,8 +168,6 @@
     \setcounter{page}{1}
 }
 
-% Include the abbreviations file
-\include{98_abbreviations}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
